@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.App {
+  background: rgba(46, 26, 219, 0.5);
+  transition: 0.4s ease-out;
+  background-repeat: no-repeat;
+  
+}
+
+.Warm {
+  background: rgba(248, 53, 53, 0.5);
+  transition: 0.4s ease-out;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 auto 75px;
+}
+
+.search-bar {
+  padding: 8px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 0px 0px 16px 16px;
+  appearance: none;
+  background: none;
+  background-color: rgb(255, 255,255,0.5);
+  box-shadow: 0px 5px rgba(0,0,0,0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.search-bar:focus {
+  margin-top: 30px;
+}
+
+.search-bar:focus {
+  background-color: rgba(255,255,255,0.75);
+  
+}
+
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+}
+
+.location-box .date {
+  color:  #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50,50,70,0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50,50,70,0.5);
+  text-align: center;
+  box-shadow: 0px 5px rgba(0,0,0,0.2);
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+  
+}
+
+.difference-temp {
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
+    display: none;
+    margin-bottom: 10px;
+    transition: 0.4s ease-in;
+
+}
+
+.show-more {
+  background-color: rgba(255,255,255,0.2);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.max-temp {
+  font-weight: bolder;
+  color: #000;
+}
+
+.min-temp {
+  color: #fff;
+}
+
+.attribution {
+  background-color: rgba(255,255,255,0.2);
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.attribution a {
+  color: white;
+}
+
+@media  (min-width: 500px) {
+  .App {
+    font-size: 150%;
+  }
+} 
